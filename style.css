@@ -126,7 +126,7 @@ h1 {
   color: black;
 }
 
-/* About Us section */
+/* Hero section */
 
 .section {
   height: 80vh;
@@ -140,6 +140,15 @@ h1 {
 
 .txt-color {
   color: aqua;
+}
+
+/* About */
+#about {
+  background: #fdffcd; 
+}
+
+#tours {
+  background: #e0ffcd; 
 }
 
 /* Footer */
