@@ -5,13 +5,29 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* body {
-    overflow: hidden;
-  } */
+/* Customized Scroll Bar */
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
 
 header {
   height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
 
 .video-container {
@@ -26,24 +42,42 @@ header {
 
 /* Nab Bar Section  */
 
-.logo img {
+.logo {
   height: 4rem;
   width: 4rem;
 }
 
-.navbar {
-  position: relative;
-  z-index: 1000;
-  /* border: 2px solid white; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5% 15%;
+@media screen and (min-width: 800px) {
+
+  .nav-center {
+    width:  90vw;
+    max-width: 1170px;
+    /* position: relative; */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  nav {
+    background: transparent;
+  }
+
+
+  .links {
+    display: flex;
+    list-style: none;
+  }
+  
 }
 
-nav ul li {
-  display: inline-block;
-  padding-right: 2rem;
+.links li {
+  padding-left: 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
@@ -94,11 +128,34 @@ h1 {
 
 /* About Us section */
 
-.about-section {
-  height: 30vh;
+.section {
+  height: 80vh;
 }
 
-.about-section h2 {
+.section h2 {
   font-size: 2.5rem;
   text-align: center;
+  letter-spacing: .3rem;
+}
+
+.txt-color {
+  color: aqua;
+}
+
+/* Footer */
+footer {
+  border: 2px solid black;
+  height: 12rem;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #142d4c; 
+}
+
+.copyright {
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: .2rem;
+  font-weight: 400;
+  color: white;
 }

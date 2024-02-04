@@ -16,29 +16,29 @@
     <header>
       <!-- Banner Video -->
       <video class="video-container" loading="lazy" muted autoplay loop>
-        <source
-          src="./resources/video1.mp4"
-          type="video/mp4"
-        />
+        <source src="./resources/video1.mp4" type="video/mp4" />
       </video>
       <!-- Nav Bar section -->
-      <div class="navbar">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="./resources/logo.svg" alt="logo" />
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- Nav Center -->
+          <div class="nav-header">
+            <!-- Logo -->
+            <img class="logo" src="./resources/logo.svg" alt="logo" />
+            <!-- Toggle Button -->
+            <button class="nav-toggle"></button>
+          </div>
+          <div class="link-container">
+            <ul class="links">
+              <li class="scroll-link">Home</li>
+              <li class="scroll-link">About</li>
+              <li class="scroll-link">Services</li>
+              <li class="scroll-link">Tours</li>
+            </ul>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Tours</li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <!-- Banner section  -->
+      </nav>
+      <!-- Banner section -->
       <section class="banner">
         <h1>SCROLL PROJECT</h1>
         <p>
@@ -49,9 +49,22 @@
         </p>
         <button id="explore-btn">EXPLORE TOURS</button>
       </section>
-      <section class="about-section">
-        <h2>ABOUT US</h2>
+    </header>
+    <main>
+      <!-- Hero sections  -->
+      <section id="about" class="section">
+        <h2>ABOUT <span class="txt-color">US</span></h2>
       </section>
+      <section id="services" class="section">
+        <h2>OUR <span class="txt-color">SERVICES</span></h2>
+      </section>
+      <section id="tours" class="section">
+        <h2>FEATURED <span class="txt-color">TOURS</span></h2>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <span class="copyright">Copyright &copy; Backroads Travel Company <span id="copyrightDate">2024</span>. All Rights Reserved</span>
+      </footer>
     </main>
     <script src="app.js"></script>
   </body>
