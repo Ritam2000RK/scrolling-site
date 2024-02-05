@@ -166,7 +166,7 @@ footer {
 
 /* Media query of max width for smaller devices mainly for mobile devices */
 
-@media screen and (max-width: 792px) {
+@media screen and (max-width: 799px) {
   h1 {
     font-size: 2.5rem;
   }
