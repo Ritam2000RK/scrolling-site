@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/23ed75a8e5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -26,14 +30,15 @@
             <!-- Logo -->
             <img class="logo" src="./resources/logo.svg" alt="logo" />
             <!-- Toggle Button -->
-            <button class="nav-toggle"></button>
+            <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
           </div>
           <div class="link-container">
             <ul class="links">
-              <li class="scroll-link">Home</li>
-              <li class="scroll-link">About</li>
-              <li class="scroll-link">Services</li>
-              <li class="scroll-link">Tours</li>
+              <li><a class="scroll-link" href="#home">Home</a></li>
+              <li><a class="scroll-link" href="#about">About</a></li>
+              <li><a class="scroll-link" href="#services">Services</a></li>
+              <li><a class="scroll-link" href="#tours">Tours</a></li>
+              <li><a class="scroll-link" href="#tours">Tours</a></li>
             </ul>
           </div>
         </div>
@@ -44,26 +49,34 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quis!
           Consequatur nisi, architecto, dignissimos praesentium ex nesciunt
-          perspiciatis temporibus, mollitia a eaque ad id ut tempore
-          perferendis! Quia, accusantium non.
+          perspiciatis temporibus.
         </p>
         <button id="explore-btn">EXPLORE TOURS</button>
       </section>
     </header>
     <main>
-      <!-- Hero sections  -->
+      <!-- Main sections  -->
       <section id="about" class="section">
-        <h2>ABOUT <span class="txt-color">US</span></h2>
+        <div class="title">
+          <h2>ABOUT <span class="txt-color">US</span></h2>
+        </div>
       </section>
       <section id="services" class="section">
-        <h2>OUR <span class="txt-color">SERVICES</span></h2>
+        <div class="title">
+          <h2>OUR <span class="txt-color">SERVICES</span></h2>
+        </div>
       </section>
       <section id="tours" class="section">
-        <h2>FEATURED <span class="txt-color">TOURS</span></h2>
+        <div class="title">
+          <h2>FEATURED <span class="txt-color">TOURS</span></h2>
+        </div>
       </section>
       <!-- Footer -->
       <footer>
-        <span class="copyright">Copyright &copy; Backroads Travel Company <span id="copyrightDate">2024</span>. All Rights Reserved</span>
+        <span class="copyright"
+          >Copyright &copy; Backroads Travel Company
+          <span id="copyrightDate"></span>. All Rights Reserved</span
+        >
       </footer>
     </main>
     <script src="app.js"></script>
