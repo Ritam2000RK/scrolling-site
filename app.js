@@ -13,19 +13,23 @@ const videoContainer = document.querySelector(".video-container");
 const navHeader = document.querySelector(".nav-header");
 const mainContent = document.getElementById("main");
 
+let navHeaderHeight;
+let linkHeight;
+let containerHeight;
+//totalHeight has problem because if values are null in linkHeight and navHeaderHeight then it can lead to NaN. I'will fix this later.
+let totalHeight = navHeaderHeight + linkHeight; 
+
 toggleBtn.addEventListener("click", () => {
   // if(!displayLinks.classList.contains('show-links')) {
   //     displayLinks.classList.add('show-links');
   // }else{
   //     displayLinks.classList.remove('show-links');
   // }
-  const navHeaderHeight = navHeader.getBoundingClientRect().height;
-  const containerHeight = displayContainer.getBoundingClientRect().height;
+  navHeaderHeight = navHeader.getBoundingClientRect().height;
+  containerHeight = displayContainer.getBoundingClientRect().height;
 
   if (containerHeight === 0) {
-    const linkHeight = links.getBoundingClientRect().height;
-
-    const totalHeight = navHeaderHeight + linkHeight;
+    linkHeight = links.getBoundingClientRect().height;
 
     displayContainer.style.height = `${linkHeight}px`;
     videoContainer.style.marginTop = `${totalHeight}px`;

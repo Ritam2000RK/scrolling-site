@@ -205,6 +205,10 @@ footer {
     font-size: 1.5rem;
   }
 
+  .links li a:hover {
+    color: black;
+  }
+
   .link-container {
     height: 0;
     overflow: hidden;
