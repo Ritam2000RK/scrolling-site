@@ -19,7 +19,14 @@
   <body>
     <header>
       <!-- Banner Video -->
-      <video class="video-container" id="videoContainer" loading="lazy" muted autoplay loop>
+      <video
+        class="video-container"
+        id="videoContainer"
+        loading="lazy"
+        muted
+        autoplay
+        loop
+      >
         <source src="./resources/video1.mp4" type="video/mp4" />
       </video>
       <!-- Nav Bar section -->
@@ -34,7 +41,7 @@
           </div>
           <div class="link-container">
             <ul class="links">
-              <li><a class="scroll-link" href="#home">Home</a></li>
+              <li><a class="scroll-link" href="#">Home</a></li>
               <li><a class="scroll-link" href="#about">About</a></li>
               <li><a class="scroll-link" href="#services">Services</a></li>
               <li><a class="scroll-link" href="#tours">Tours</a></li>
@@ -73,10 +80,13 @@
       <!-- Footer -->
       <footer>
         <span class="copyright"
-          >Copyright &copy; Backroads Travel Company
+          >Copyright &copy; Backroads Travel Tours Company
           <span id="copyrightDate"></span>. All Rights Reserved</span
         >
       </footer>
+      <button id="arrowBtn" href="#">
+        <i class="fa-solid fa-arrow-up fa-beat"></i>
+      </button>
     </main>
     <script src="app.js"></script>
   </body>
